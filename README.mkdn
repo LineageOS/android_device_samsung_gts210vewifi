@@ -1,18 +1,20 @@
-Unified Device Tree for Asus Zenfone 2 Laser/Selfie/Zoom (1080p)
+Device Tree for Samsung Galaxy Tab S2 9.7 (gts210vewifi)
 ===========================================
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Quad-core 1.7 GHz Cortex-A53 & quad-core 1.0 GHz Cortex-A53
-Chipset | Qualcomm MSM8939 Snapdragon 615
-GPU     | Adreno 405
-Memory  | 2/3GB RAM
-Shipped Android Version | 5.0.2
-Storage | 16/32 GB
-MicroSD | Up to 128 GB
-Battery | Li-Po 3000mAh battery
-Display | 1080 x 1920 pixels, 5.5 inches (~401 ppi pixel density)
-        | 1080 x 1920 pixels, 6.0 inches (~367 ppi pixel density)
-Camera  | 13 MP, laser autofocus, dual-LED (dual tone) flash
+CPU     | Quad-core 1.4 GHz Cortex-A53 & Quad-core 1.8 GHz Cortex-A72
+Chipset | Qualcomm MSM8976 Snapdragon 652
+GPU     | Adreno 510
+Memory  | 2 GB RAM
+Shipped Android Version | 6.0.1
+Storage | 32/64 GB
+MicroSD | Up to 256 GB
+Battery | Non-removable Li-Ion 5870 mAh battery
+Display | 1536 x 2048 pixels (~264 ppi pixel density)
+Camera  | Primary: 8 MP
+	| Secondary: 2.1 MP
 
-Copyright 2016 - The CyanogenMod Project.
+Copyright 2017 - The LineageOS Project.
+
+![Samsung Galaxy Tab S2 9.7](http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-tab-s2-97-2.jpg "Samsung Galaxy Tab S2 9.7")
