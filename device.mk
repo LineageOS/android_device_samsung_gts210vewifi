@@ -20,13 +20,5 @@ $(call inherit-product-if-exists, vendor/samsung/gts210vewifi/gts210vewifi-vendo
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Screen density
-PRODUCT_AAPT_CONFIG := normal large xlarge
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2048
-TARGET_SCREEN_WIDTH := 1536
-
 # Inherit from msm8976-common
 $(call inherit-product, device/samsung/msm8976-common/msm8976.mk)
