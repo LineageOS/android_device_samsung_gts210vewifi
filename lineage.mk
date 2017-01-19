@@ -7,6 +7,7 @@ PRODUCT_NAME := lineage_gts210vewifi
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_DEVICE := gts210vewifi
+PRODUCT_MODEL := SM-T813
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
