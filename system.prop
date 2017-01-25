@@ -1,2 +1,13 @@
+# Bluetooth
+ro.bluetooth.dun=false
+ro.bluetooth.sap=false
+ro.qualcomm.bluetooth.ftp=true
+ro.qualcomm.bluetooth.hfp=false
+ro.qualcomm.bluetooth.hsp=false
+ro.qualcomm.bluetooth.map=true
+ro.qualcomm.bluetooth.nap=false
+ro.qualcomm.bluetooth.opp=true
+ro.qualcomm.bluetooth.pbap=true
+
 # Radio
 ro.radio.noril=yes
