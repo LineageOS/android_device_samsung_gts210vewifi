@@ -9,5 +9,8 @@ ro.qualcomm.bluetooth.nap=false
 ro.qualcomm.bluetooth.opp=true
 ro.qualcomm.bluetooth.pbap=true
 
+# Display
+ro.sf.hwrotation=270
+
 # Radio
 ro.radio.noril=yes
