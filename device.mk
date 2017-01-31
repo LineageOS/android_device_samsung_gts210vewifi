@@ -20,5 +20,9 @@ $(call inherit-product-if-exists, vendor/samsung/gts210vewifi/gts210vewifi-vendo
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Audio configuration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/mixer_paths_wcd9330.xml:system/etc/mixer_paths_wcd9330.xml
+
 # Inherit from msm8976-common
 $(call inherit-product, device/samsung/msm8976-common/msm8976.mk)
