@@ -23,4 +23,7 @@
 
     <!-- This device does not allow sms service. -->
     <bool name="config_sms_capable">false</bool>
+
+    <!-- If this is true, the screen will fade off. -->
+    <bool name="config_animateScreenLights">true</bool>
 </resources>
