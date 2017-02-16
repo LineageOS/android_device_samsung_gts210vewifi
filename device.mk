@@ -20,6 +20,23 @@ $(call inherit-product-if-exists, vendor/samsung/gts210vewifi/gts210vewifi-vendo
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Screen density
+PRODUCT_AAPT_CONFIG := normal large xlarge
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2048
+TARGET_SCREEN_WIDTH := 1536
+
+# Device characteristics
+PRODUCT_CHARACTERISTICS := tablet
+
+$(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_wcd9330.xml:system/etc/mixer_paths_wcd9330.xml
