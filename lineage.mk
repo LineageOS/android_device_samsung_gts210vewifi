@@ -13,6 +13,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=gts210vewifixx \
-    BUILD_FINGERPRINT=samsung/gts210vewifixx/gts210vewifi:6.0.1/MMB29M/T813XXU2APK6:user/release-keys \
-    PRIVATE_BUILD_DESC="gts210vewifixx-user 6.0.1 MMB29M T813XXU2APK6 release-keys"
+    PRODUCT_NAME=gts210vewifizh \
+    BUILD_FINGERPRINT=samsung/gts210vewifizh/gts210vewifi:6.0.1/MMB29M/T813ZSS2AQB1:user/release-keys \
+    PRIVATE_BUILD_DESC="gts210vewifizh-user 6.0.1 MMB29M T813ZSS2AQB1 release-keys"
