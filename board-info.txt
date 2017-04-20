@@ -1,1 +1,1 @@
-require version-bootloader=T813ZSS2AQB1
+require version-bootloader=T813XXU2BQD1
