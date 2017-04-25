@@ -291,6 +291,11 @@
         <path name="deep-buffer-playback" />
     </path>
 
+    <path name="deep-buffer-playback speaker-and-bt-sco-wb">
+        <path name="deep-buffer-playback bt-sco-wb" />
+        <path name="deep-buffer-playback" />
+    </path>
+	
     <path name="low-latency-playback">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
@@ -337,7 +342,12 @@
         <path name="low-latency-playback bt-sco" />
         <path name="low-latency-playback" />
     </path>
-
+	
+    <path name="low-latency-playback speaker-and-bt-sco-wb">
+        <path name="low-latency-playback bt-sco-wb" />
+        <path name="low-latency-playback" />
+    </path>
+	
     <path name="jam-framework-playback">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia17" value="1" />
     </path>
@@ -1073,13 +1083,13 @@
     <path name="headset">
         <path name="ear" />
             <ctl name="DAC1 Playback Volume" value="175"/>
-            <ctl name="Headphone Playback Volume" value="27"/>
+            <ctl name="Headphone Playback Volume" value="25"/>
     </path>
 
     <path name="speaker-and-headphones">
         <path name="spk-ear" />
-            <ctl name="DAC1 Playback Volume" value="150"/>
-            <ctl name="Speaker Playback Volume" value="35"/>
+            <ctl name="DAC1 Playback Volume" value="170"/>
+            <ctl name="Speaker Playback Volume" value="31"/>
             <ctl name="Headphone Playback Volume" value="0"/>			
     </path>
 
@@ -1095,7 +1105,13 @@
             <ctl name="DAC1 Playback Volume" value="175"/>
             <ctl name="Speaker Playback Volume" value="30"/>			
     </path>
-
+	
+    <path name="speaker-and-bt-sco-wb">
+        <path name="spk" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Speaker Playback Volume" value="30"/>			
+    </path>
+	
     <path name="speaker-and-proxy">
         <path name="spk" />
             <ctl name="DAC1 Playback Volume" value="175"/>
@@ -1120,7 +1136,7 @@
     <!-- Recording Scenario  -->
     <path name="rec-main-mic">
         <path name="main-mic" />
-            <ctl name="IN3 Boost Volume" value="37"/>
+            <ctl name="IN3 Boost Volume" value="38"/>
             <ctl name="STO1 ADC Capture Volume" value="47"/>
     </path>
 
@@ -1668,6 +1684,82 @@
     </path>
     <!-- end of VoLTE Voice call Scenario  -->
 
+    <!-- VoLTE Voice call Wide-band Scenario -->
+    <!-- RX part -->
+    <path name="VoLTE-voice-handset-wb">
+        <path name="rcv" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Mono Playback Volume" value="31"/>		
+    </path>
+
+    <path name="VoLTE-voice-handset-extra-vol-wb">
+        <path name="rcv" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Mono Playback Volume" value="31"/>		
+    </path>
+
+    <path name="VoLTE-voice-handset-hac-wb">
+        <path name="rcv" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Mono Playback Volume" value="31"/>		
+    </path>
+
+    <path name="VoLTE-voice-speaker-wb">
+        <path name="spk" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Speaker Playback Volume" value="31"/>	
+    </path>
+
+    <path name="VoLTE-voice-speaker-extra-vol-wb">
+        <path name="spk" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Speaker Playback Volume" value="31"/>		
+    </path>
+
+    <path name="VoLTE-voice-headset-wb">
+        <path name="ear" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Headphone Playback Volume" value="31"/>		
+    </path>
+
+    <!-- TX part -->
+    <path name="VoLTE-voice-main-mic-wb">
+        <path name="main-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-voice-sub-mic-wb">
+        <path name="sub-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-voice-headphone-mic-wb">
+        <path name="main-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-voice-headset-mic-wb">
+        <path name="ear-mic" />
+            <ctl name="IN1 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-voice-NS-mic-handset-wb">
+        <path name="main-sub-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-voice-NS-mic-speaker-wb">
+        <path name="sub-main-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+    <!-- end of VoLTE Voice call Wide-band Scenario  -->
+
     <!-- ================================================================ -->
     <!-- VoLTE Video call Scenario -->
     <!-- RX part -->
@@ -1738,6 +1830,76 @@
             <ctl name="STO1 ADC Capture Volume" value="47"/>
     </path>
     <!-- end of VoLTE Video call Scenario  -->
+
+    <!-- VoLTE Video call Wide-band Scenario -->
+    <!-- RX part -->
+    <path name="VoLTE-video-handset-wb">
+        <path name="rcv" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Mono Playback Volume" value="31"/>		
+    </path>
+
+    <path name="VoLTE-video-handset-extra-vol-wb">
+        <path name="rcv" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Mono Playback Volume" value="31"/>		
+    </path>
+
+    <path name="VoLTE-video-speaker-wb">
+        <path name="spk" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Speaker Playback Volume" value="31"/>		
+    </path>
+
+    <path name="VoLTE-video-speaker-extra-vol-wb">
+        <path name="spk" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Speaker Playback Volume" value="31"/>		
+    </path>
+
+    <path name="VoLTE-video-headset-wb">
+        <path name="ear" />
+            <ctl name="DAC1 Playback Volume" value="175"/>
+            <ctl name="Headphone Playback Volume" value="31"/>		
+    </path>
+
+    <!-- TX part -->
+    <path name="VoLTE-video-main-mic-wb">
+        <path name="main-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-video-sub-mic-wb">
+        <path name="sub-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-video-headphone-mic-wb">
+        <path name="ear-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-video-headset-mic-wb">
+        <path name="ear-mic" />
+            <ctl name="IN1 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-video-NS-mic-handset-wb">
+        <path name="main-sub-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+    <path name="VoLTE-video-NS-mic-speaker-wb">
+        <path name="sub-main-mic" />
+            <ctl name="IN3 Boost Volume" value="16"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+    <!-- end of VoLTE Video call Wide-band Scenario  -->
 
     <!-- ================================================================ -->
     <!-- TTY Scenario  -->
@@ -1936,7 +2098,7 @@
 
     <path name="voip-headset-mic-comm">
         <path name="ear-mic" />
-            <ctl name="IN1 Boost Volume" value="16"/>
+            <ctl name="IN1 Boost Volume" value="31"/>
             <ctl name="STO1 ADC Capture Volume" value="47"/>
     </path>
 
