@@ -26,4 +26,7 @@
 
     <!-- If this is true, the screen will fade off. -->
     <bool name="config_animateScreenLights">true</bool>
+    
+    <!-- This device works with Night Display. -->
+    <bool name="config_nightDisplayAvailable">true</bool>
 </resources>
