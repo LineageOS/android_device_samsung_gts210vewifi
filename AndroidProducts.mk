@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_gts210vewifi.mk
+    $(LOCAL_DIR)/lineage_gts210vewifi.mk
