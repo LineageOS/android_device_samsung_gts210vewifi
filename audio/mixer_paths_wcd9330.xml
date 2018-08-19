@@ -990,16 +990,29 @@
     </path>
 
     <path name="ear">
-        <ctl name="Stereo DAC MIXL DAC R1 Switch" value="1"/>
-        <ctl name="Stereo DAC MIXR DAC L1 Switch" value="1"/>
+        <ctl name="Stereo DAC MIXL DAC L1 Switch" value="1"/>
+        <ctl name="Stereo DAC MIXR DAC R1 Switch" value="1"/>
         <ctl name="HPO L Playback Switch" value="1"/>
         <ctl name="HPO R Playback Switch" value="1"/>
         <ctl name="HP Switch" value="1" />
     </path>
 
     <path name="spk-ear">
-        <path name="spk" />
-        <path name="ear" />
+        <ctl name="Stereo DAC MIXL DAC L1 Switch" value="1"/>
+        <ctl name="Stereo DAC MIXR DAC R1 Switch" value="1"/>
+        <ctl name="DAC L2 Source" value="Stereo DAC Mixer"/>
+        <ctl name="DAC R2 Source" value="Stereo DAC Mixer"/>
+        <ctl name="SPK MIXL DAC L2 Switch" value="1"/>
+        <ctl name="SPK MIXR DAC R2 Switch" value="1"/>	
+        <ctl name="SPO L MIX SPKVOL L Switch" value="1"/>
+        <ctl name="SPO R MIX SPKVOL R Switch" value="1"/>
+        <ctl name="SPKVOL L Switch" value="1"/>
+        <ctl name="SPKVOL R Switch" value="1"/>
+        <ctl name="SPO Playback Switch" value="1"/>
+        <ctl name="SPK Switch" value="1" />
+        <ctl name="HPO L Playback Switch" value="1"/>
+        <ctl name="HPO R Playback Switch" value="1"/>
+        <ctl name="HP Switch" value="1" />
     </path>
 
     <!-- TX part -->
@@ -1111,7 +1124,7 @@
             <ctl name="DAC1 Playback Volume" value="175"/>
             <ctl name="Speaker Playback Volume" value="30"/>			
     </path>
-	
+    
     <path name="speaker-and-proxy">
         <path name="spk" />
             <ctl name="DAC1 Playback Volume" value="175"/>
