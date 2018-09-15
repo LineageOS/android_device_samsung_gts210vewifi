@@ -21,9 +21,6 @@ DEVICE_PATH := device/samsung/gts210vewifi
 # Assert
 TARGET_OTA_ASSERT_DEVICE := gts210vewifi
 
-# Board
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-
 # Kernel
 TARGET_KERNEL_CONFIG := gts210vewifi_defconfig
 
