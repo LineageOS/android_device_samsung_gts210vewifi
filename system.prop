@@ -11,3 +11,6 @@ ro.qualcomm.bluetooth.pbap=true
 
 # Radio
 ro.radio.noril=yes
+
+# Lockscreen
+lockscreen.rot_override=true
