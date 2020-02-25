@@ -21,9 +21,6 @@ DEVICE_PATH := device/samsung/gts210vewifi
 # Assert
 TARGET_OTA_ASSERT_DEVICE := gts210vewifi
 
-# Display
-SF_PRIMARY_DISPLAY_ORIENTATION := 270
-
 # Kernel
 TARGET_KERNEL_CONFIG := gts210vewifi_defconfig
 
