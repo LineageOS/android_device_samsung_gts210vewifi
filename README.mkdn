@@ -12,9 +12,9 @@ Storage | 32/64 GB
 MicroSD | Up to 256 GB
 Battery | Non-removable Li-Ion 5870 mAh battery
 Display | 1536 x 2048 pixels (~264 ppi pixel density)
-Camera  | Primary: 8 MP
-	| Secondary: 2.1 MP
+Rear Camera | 8 MP	
+Front Camera | 2.1 MP
 
-Copyright 2017 - The LineageOS Project.
+Copyright 2021 - The LineageOS Project.
 
-![Samsung Galaxy Tab S2 9.7](http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-tab-s2-97-2.jpg "Samsung Galaxy Tab S2 9.7")
+![Samsung Galaxy Tab S2 9.7](https://wiki.lineageos.org/images/devices/gts210vewifi.png "Samsung Galaxy Tab S2 9.7")
