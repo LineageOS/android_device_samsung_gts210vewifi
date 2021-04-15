@@ -1,4 +1,4 @@
-# Samsung Package Version: T813XXS2BSJ3_T813XAC2BSA2_XAC, unless pinned
+# Samsung Package Version: T813XXS2BTK3_T813XSA2BTK1_XSA, unless pinned
 
 # Sensors
 lib64/hw/sensors.msm8952.so
